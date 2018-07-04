@@ -3,7 +3,7 @@ public class TestThread {
     public static void main(String[] args){
         Runner1 r = new Runner1();
         Thread t = new Thread(r);
-        t.start();
+        t.start();  //线程必须由 start()方法开启
         // r.run(); 不能使用，因为这是方法调用
         for(int i=0;i<100;i++){
             System.out.println("Main Thread:-----"+ i );
